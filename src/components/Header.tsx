@@ -92,7 +92,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full h-16 mt-10 bg-transparent flex items-center">
+    <div className="relative top-0 left-0 right-0 z-[9999] w-full h-16 mt-10 bg-transparent flex items-center">
       <div className="w-full px-4 md:px-8 lg:px-20 xl:px-60 flex flex-row items-center justify-between">
         {/* branding */}
         <div className="flex flex-row items-center space-x-3 md:space-x-6 group cursor-pointer">
@@ -101,20 +101,20 @@ const Header = () => {
         </div>
         
         {/* nav links */}
-        <div className="hidden md:flex flex-row items-center space-x-4 lg:space-x-12 header-nav-laptop font-fredoka">
-          <button onClick={() => scrollToSection('about')} className={`relative text-black font-medium text-lg lg:text-2xl header-link-laptop transition-all duration-300 px-2 lg:px-4 py-2 group ${activeSection === 'about' ? 'active' : ''}`}>
+        <div className="hidden md:flex flex-row items-center space-x-1 md:space-x-2 lg:space-x-4 xl:space-x-8 2xl:space-x-12 font-fredoka">
+          <button onClick={() => scrollToSection('about')} className={`relative text-black font-medium text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl whitespace-nowrap transition-all duration-300 px-1 md:px-2 lg:px-3 xl:px-4 py-2 group ${activeSection === 'about' ? 'active' : ''}`}>
             About Me
             <span className={`absolute inset-0 border-2 border-black rounded-lg transition-all duration-300 ${activeSection === 'about' ? 'opacity-100 scale-100' : 'border-transparent group-hover:border-black opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100'}`}></span>
           </button>
-          <button onClick={() => scrollToSection('skills')} className={`relative text-black font-medium text-lg lg:text-2xl header-link-laptop transition-all duration-300 px-2 lg:px-4 py-2 group ${activeSection === 'skills' ? 'active' : ''}`}>
+          <button onClick={() => scrollToSection('skills')} className={`relative text-black font-medium text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl whitespace-nowrap transition-all duration-300 px-1 md:px-2 lg:px-3 xl:px-4 py-2 group ${activeSection === 'skills' ? 'active' : ''}`}>
             Skills
             <span className={`absolute inset-0 border-2 border-black rounded-lg transition-all duration-300 ${activeSection === 'skills' ? 'opacity-100 scale-100' : 'border-transparent group-hover:border-black opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100'}`}></span>
           </button>
-          <button onClick={() => scrollToSection('projects')} className={`relative text-black font-medium text-lg lg:text-2xl header-link-laptop transition-all duration-300 px-2 lg:px-4 py-2 group ${activeSection === 'projects' ? 'active' : ''}`}>
+          <button onClick={() => scrollToSection('projects')} className={`relative text-black font-medium text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl whitespace-nowrap transition-all duration-300 px-1 md:px-2 lg:px-3 xl:px-4 py-2 group ${activeSection === 'projects' ? 'active' : ''}`}>
             Projects
             <span className={`absolute inset-0 border-2 border-black rounded-lg transition-all duration-300 ${activeSection === 'projects' ? 'opacity-100 scale-100' : 'border-transparent group-hover:border-black opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100'}`}></span>
           </button>
-          <button onClick={() => scrollToSection('contact')} className={`relative text-black font-medium text-lg lg:text-2xl header-link-laptop transition-all duration-300 px-2 lg:px-4 py-2 group ${activeSection === 'contact' ? 'active' : ''}`}>
+          <button onClick={() => scrollToSection('contact')} className={`relative text-black font-medium text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl whitespace-nowrap transition-all duration-300 px-1 md:px-2 lg:px-3 xl:px-4 py-2 group ${activeSection === 'contact' ? 'active' : ''}`}>
             Contact
             <span className={`absolute inset-0 border-2 border-black rounded-lg transition-all duration-300 ${activeSection === 'contact' ? 'opacity-100 scale-100' : 'border-transparent group-hover:border-black opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100'}`}></span>
           </button>
