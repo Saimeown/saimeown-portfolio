@@ -12,11 +12,11 @@ const Hero = () => {
         <div className="-mt-15 px-4 md:px-6 lg:px-12 xl:px-20 2xl:px-60 min-h-screen flex items-center relative overflow-hidden" data-section="about">
             
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0 relative w-full z-10">
-                <div className="flex-1 text-center lg:text-left max-w-none lg:max-w-3xl relative z-10">
+                <div className="flex-1 text-center lg:text-left max-w-none sm:max-w-sm lg:max-w-md xl:max-w-xl 2xl:max-w-2xl hero-text-125-zoom relative z-10">
                     {/* Hello, I'm Simon Brian. Frontend Developer Based In Philippines. */}
                     <div 
                         ref={titleReveal.ref}
-                        className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-black mb-4 lg:mb-6 leading-tight reveal-fade-up ${titleReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl hero-title-125-zoom font-bold text-black mb-4 lg:mb-6 leading-tight reveal-fade-up ${titleReveal.isRevealed ? 'revealed' : ''}`}
                     >
                         <div className="whitespace-nowrap sm:whitespace-normal">
                             <span className="font-sora font-medium">Hello, I❜am </span>
@@ -37,7 +37,7 @@ const Hero = () => {
                     {/* I create beautiful and functional websites that help businesses grow online. */}
                     <div 
                         ref={descriptionReveal.ref}
-                        className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl text-gray-700 mb-6 lg:mb-8 max-w-none mx-auto lg:mx-0 reveal-fade-up ${descriptionReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-sm xl:w-120 2xl:text-xl hero-description-125-zoom text-gray-700 mb-6 lg:mb-8 max-w-none mx-auto lg:mx-0 reveal-fade-up ${descriptionReveal.isRevealed ? 'revealed' : ''}`}
                     >
                         <p>I'm Simon. I build interactive interfaces, crafty React frontends for web and mobile apps. I love turning messy ideas into functional designs. While I specialize in Frontend, I'm also capable of working on the backend to build complete, functional applications.</p>
                     </div>
