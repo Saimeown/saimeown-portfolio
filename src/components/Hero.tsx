@@ -75,7 +75,7 @@ const Hero = () => {
                     ref={imageReveal.ref}
                     className={`flex-2 flex justify-center lg:justify-center lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:-translate-x-0 reveal-fade-right ${imageReveal.isRevealed ? 'revealed' : ''}`}
                 >
-                    <img src={HeroImage} alt="Hero" className="h-auto w-full mt-8 lg:mt-15 min-w-80 sm:min-w-96 md:min-w-[500px] lg:min-w-[650px] xl:min-w-[750px] 2xl:min-w-[950px] z-0" />
+                    <img src={HeroImage} alt="Hero" className="h-auto w-full mt-8 lg:mt-15 min-w-80 sm:min-w-96 md:min-w-[500px] lg:min-w-[650px] xl:min-w-[650px] 2xl:min-w-[880px] z-0" />
                 </div>
             </div>
         </div>
