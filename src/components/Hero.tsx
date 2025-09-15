@@ -9,7 +9,7 @@ const Hero = () => {
     const imageReveal = useRevealOnScroll({ delay: 300 });
 
     return (
-        <div className="-mt-15 px-4 md:px-8 lg:px-20 xl:px-60 min-h-screen flex items-center relative overflow-hidden" data-section="about">
+        <div className="mt-5 px-4 md:px-8 lg:px-20 xl:px-60 min-h-screen hero-laptop-adjust flex items-center relative overflow-hidden" data-section="about">
             {/* Floating Blobs */}
             <div className="floating-blob floating-blob-1"></div>
             <div className="floating-blob floating-blob-2"></div>
@@ -17,12 +17,12 @@ const Hero = () => {
             <div className="floating-blob floating-blob-4"></div>
             <div className="floating-blob floating-blob-5"></div>
             
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0 relative w-full z-10">
-                <div className="flex-1 text-center lg:text-left max-w-none lg:max-w-3xl relative z-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0 hero-layout-laptop relative w-full z-10">
+                <div className="flex-1 text-center lg:text-left max-w-none lg:max-w-3xl hero-text-container relative z-20">
                     {/* Hello, I'm Simon Brian. Frontend Developer Based In Philippines. */}
                     <div 
                         ref={titleReveal.ref}
-                        className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-6 leading-tight reveal-fade-up ${titleReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl hero-title-laptop font-bold text-black mb-6 leading-tight reveal-fade-up ${titleReveal.isRevealed ? 'revealed' : ''}`}
                     >
                         <div className="whitespace-nowrap sm:whitespace-normal">
                             <span className="font-sora font-medium">Hello, I❜am </span>
@@ -31,7 +31,7 @@ const Hero = () => {
 
                         <div className="whitespace-nowrap sm:whitespace-normal">
                             <span className="font-sora font-extrabold">Frontend </span>
-                            <img src={Developer} alt="Developer" className="inline mb-1 h-6 sm:h-7 md:h-8 lg:h-10 xl:h-14" />
+                            <img src={Developer} alt="Developer" className="inline mb-1 h-6 sm:h-7 md:h-8 lg:h-10 xl:h-14 hero-dev-icon" />
                         </div>
 
                         <div className="whitespace-nowrap sm:whitespace-normal">
@@ -43,7 +43,7 @@ const Hero = () => {
                     {/* I create beautiful and functional websites that help businesses grow online. */}
                     <div 
                         ref={descriptionReveal.ref}
-                        className={`text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-8 max-w-none mx-auto lg:mx-0 reveal-fade-up ${descriptionReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`text-sm sm:text-base md:text-lg lg:text-xl hero-description-laptop text-gray-700 mb-8 max-w-none mx-auto lg:mx-0 reveal-fade-up ${descriptionReveal.isRevealed ? 'revealed' : ''}`}
                     >
                         <p>I'm Simon. I build interactive interfaces, crafty React frontends for web and mobile apps. I love turning messy ideas into functional designs. While I specialize in Frontend, I'm also capable of working on the backend to build complete, functional applications.</p>
                     </div>
@@ -51,7 +51,7 @@ const Hero = () => {
                     {/* Social Links */}
                     <div 
                         ref={socialReveal.ref}
-                        className={`flex gap-2 sm:gap-4 justify-center lg:justify-start reveal-fade-up ${socialReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`flex gap-2 sm:gap-4 hero-social-laptop justify-center lg:justify-start reveal-fade-up ${socialReveal.isRevealed ? 'revealed' : ''}`}
                     >
                         <a href="https://www.facebook.com/saigtrs/" className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
                             <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -79,9 +79,9 @@ const Hero = () => {
                 {/* Vector Image */}
                 <div 
                     ref={imageReveal.ref}
-                    className={`flex-2 flex justify-center lg:justify-center lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:-translate-x-0 reveal-fade-right ${imageReveal.isRevealed ? 'revealed' : ''}`}
+                    className={`flex-2 flex justify-center lg:justify-center hero-image-container lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:-translate-x-0 reveal-fade-right ${imageReveal.isRevealed ? 'revealed' : ''}`}
                 >
-                    <img src={HeroImage} alt="Hero" className="h-auto w-full mt-8 lg:mt-15 min-w-80 sm:min-w-96 md:min-w-[500px] lg:min-w-[650px] xl:min-w-[750px] 2xl:min-w-[950px] z-0" />
+                    <img src={HeroImage} alt="Hero" className="h-auto w-full mt-8 lg:mt-15 min-w-80 sm:min-w-96 md:min-w-[500px] lg:min-w-[650px] xl:min-w-[750px] 2xl:min-w-[950px] hero-image-laptop z-0" />
                 </div>
             </div>
         </div>

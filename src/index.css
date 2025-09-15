@@ -26,6 +26,196 @@
   .font-cherry-bomb-one {
     font-family: "Cherry Bomb One", ui-sans-serif, system-ui, sans-serif;
   }
+  
+  /* Custom responsive breakpoints for laptop screens */
+  @media (min-width: 1024px) and (max-width: 1600px) and (max-height: 800px) {
+    .hero-laptop-adjust {
+      min-height: 90vh;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    
+    .hero-layout-laptop {
+      gap: 2rem !important;
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    
+    .hero-text-container {
+      flex: 0 0 45% !important;
+      max-width: 45% !important;
+      margin-right: 2rem !important;
+    }
+    
+    .hero-image-container {
+      position: relative !important;
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+      transform: none !important;
+      right: auto !important;
+      top: auto !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    
+    .hero-title-laptop {
+      font-size: 2.5rem !important;
+      line-height: 1.2 !important;
+      margin-bottom: 1rem !important;
+    }
+    
+    .hero-description-laptop {
+      font-size: 1rem !important;
+      margin-bottom: 1.5rem !important;
+      line-height: 1.5 !important;
+    }
+    
+    .hero-image-laptop {
+      min-width: 400px !important;
+      max-width: 500px !important;
+      height: auto !important;
+    }
+    
+    .hero-dev-icon {
+      height: 2rem !important;
+    }
+    
+    .hero-social-laptop {
+      gap: 0.75rem !important;
+    }
+    
+    .hero-social-laptop a {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+    }
+    
+    .hero-social-laptop svg {
+      width: 1.25rem !important;
+      height: 1.25rem !important;
+    }
+  }
+  
+  /* Specific adjustments for your laptop (1536x695) */
+  @media (width: 1536px) and (max-height: 695px) {
+    .hero-laptop-adjust {
+      min-height: 85vh;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    
+    .hero-layout-laptop {
+      gap: 1.5rem !important;
+    }
+    
+    .hero-text-container {
+      flex: 0 0 42% !important;
+      max-width: 42% !important;
+      margin-right: 1.5rem !important;
+    }
+    
+    .hero-image-container {
+      flex: 0 0 55% !important;
+      max-width: 55% !important;
+      position: relative !important;
+      transform: none !important;
+      right: auto !important;
+      top: auto !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    
+    .hero-title-laptop {
+      font-size: 2.25rem !important;
+      margin-bottom: 0.75rem !important;
+    }
+    
+    .hero-description-laptop {
+      font-size: 0.9rem !important;
+      margin-bottom: 1.25rem !important;
+      line-height: 1.4 !important;
+    }
+    
+    .hero-image-laptop {
+      min-width: 350px !important;
+      max-width: 450px !important;
+    }
+    
+    .hero-dev-icon {
+      height: 1.75rem !important;
+    }
+    
+    /* Projects section adjustments */
+    .projects-laptop-adjust {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+    
+    .projects-title-laptop {
+      font-size: 2.5rem !important;
+      margin-bottom: 2rem !important;
+    }
+    
+    .project-video-laptop {
+      height: 300px !important;
+    }
+    
+    .project-text-laptop h3 {
+      font-size: 2rem !important;
+      margin-bottom: 0.75rem !important;
+    }
+    
+    .project-text-laptop p {
+      font-size: 0.875rem !important;
+      margin-bottom: 1rem !important;
+    }
+    
+    /* Skills section adjustments */
+    .skills-laptop-adjust {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+    
+    .skills-title-laptop {
+      font-size: 2.5rem !important;
+      margin-bottom: 2rem !important;
+    }
+    
+    /* Contact section adjustments */
+    .contact-laptop-adjust {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+    
+    .contact-title-laptop {
+      font-size: 2.5rem !important;
+      margin-bottom: 2rem !important;
+    }
+    
+    /* Header navigation adjustments */
+    .header-nav-laptop {
+      gap: 0.75rem !important;
+    }
+    
+    .header-link-laptop {
+      font-size: 1rem !important;
+      padding: 0.5rem 0.75rem !important;
+      white-space: nowrap;
+    }
+  }
+  
+  /* Additional responsive adjustments for medium laptops */
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .header-nav-laptop {
+      gap: 0.5rem !important;
+    }
+    
+    .header-link-laptop {
+      font-size: 0.9rem !important;
+      padding: 0.4rem 0.6rem !important;
+    }
+  }
 }
 
 @layer utilities {
