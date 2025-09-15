@@ -9,14 +9,14 @@ const Hero = () => {
     const imageReveal = useRevealOnScroll({ delay: 300 });
 
     return (
-        <div className="-mt-15 px-4 md:px-8 lg:px-20 xl:px-60 min-h-screen flex items-center relative overflow-hidden" data-section="about">
+        <div className="-mt-15 px-4 md:px-6 lg:px-12 xl:px-20 2xl:px-60 min-h-screen flex items-center relative overflow-hidden" data-section="about">
             
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0 relative w-full z-10">
                 <div className="flex-1 text-center lg:text-left max-w-none lg:max-w-3xl relative z-10">
                     {/* Hello, I'm Simon Brian. Frontend Developer Based In Philippines. */}
                     <div 
                         ref={titleReveal.ref}
-                        className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-6 leading-tight reveal-fade-up ${titleReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-black mb-4 lg:mb-6 leading-tight reveal-fade-up ${titleReveal.isRevealed ? 'revealed' : ''}`}
                     >
                         <div className="whitespace-nowrap sm:whitespace-normal">
                             <span className="font-sora font-medium">Hello, I❜am </span>
@@ -25,7 +25,7 @@ const Hero = () => {
 
                         <div className="whitespace-nowrap sm:whitespace-normal">
                             <span className="font-sora font-extrabold">Frontend </span>
-                            <img src={Developer} alt="Developer" className="inline mb-1 h-6 sm:h-7 md:h-8 lg:h-10 xl:h-14" />
+                            <img src={Developer} alt="Developer" className="inline mb-1 h-5 sm:h-6 md:h-7 lg:h-8 xl:h-10 2xl:h-14" />
                         </div>
 
                         <div className="whitespace-nowrap sm:whitespace-normal">
@@ -37,7 +37,7 @@ const Hero = () => {
                     {/* I create beautiful and functional websites that help businesses grow online. */}
                     <div 
                         ref={descriptionReveal.ref}
-                        className={`text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-8 max-w-none mx-auto lg:mx-0 reveal-fade-up ${descriptionReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl text-gray-700 mb-6 lg:mb-8 max-w-none mx-auto lg:mx-0 reveal-fade-up ${descriptionReveal.isRevealed ? 'revealed' : ''}`}
                     >
                         <p>I'm Simon. I build interactive interfaces, crafty React frontends for web and mobile apps. I love turning messy ideas into functional designs. While I specialize in Frontend, I'm also capable of working on the backend to build complete, functional applications.</p>
                     </div>
@@ -45,25 +45,25 @@ const Hero = () => {
                     {/* Social Links */}
                     <div 
                         ref={socialReveal.ref}
-                        className={`flex gap-2 sm:gap-4 justify-center lg:justify-start reveal-fade-up ${socialReveal.isRevealed ? 'revealed' : ''}`}
+                        className={`flex gap-1 sm:gap-2 md:gap-4 justify-center lg:justify-start reveal-fade-up ${socialReveal.isRevealed ? 'revealed' : ''}`}
                     >
-                        <a href="https://www.facebook.com/saigtrs/" className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
-                            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="https://www.facebook.com/saigtrs/" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
+                            <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/saimese._/" className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
-                            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="https://www.instagram.com/saimese._/" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
+                            <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.40z" />
                             </svg>
                         </a>
-                        <a href="https://x.com/saimeown" className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
-                            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="https://x.com/saimeown" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
+                            <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
                         </a>
-                        <a href="https://discord.com/users/1085116349858197524" className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
-                            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="https://discord.com/users/1085116349858197524" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-black rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition-colors duration-300">
+                            <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.120.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.30z" />
                             </svg>
                         </a>
