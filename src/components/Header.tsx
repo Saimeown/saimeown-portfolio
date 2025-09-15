@@ -122,7 +122,7 @@ const Header = () => {
         {/* resume button */}
         <button 
           onClick={handleResumeDownload}
-          className="flex flex-row items-center bg-white text-black border-2 border-black px-2 py-1 sm:px-3 sm:py-1 md:px-6 lg:px-9 md:py-2 lg:py-4 rounded-xl transition-all duration-300 hover:bg-black hover:text-white font-cherry-bomb-one font-bold text-sm sm:text-base md:text-xl lg:text-2xl"
+          className="flex flex-row items-center bg-white text-black border-2 border-black px-2 py-1 sm:px-3 sm:py-1 md:px-6 lg:px-9 2xl:px-3 md:py-2 lg:py-4 rounded-xl transition-all duration-300 hover:bg-black hover:text-white font-cherry-bomb-one font-bold text-sm sm:text-base md:text-xl lg:text-2xl"
         >
           <span className="hidden sm:inline">Download CV</span>
           <span className="sm:hidden">CV</span>
