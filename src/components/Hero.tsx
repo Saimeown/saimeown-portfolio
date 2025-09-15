@@ -9,8 +9,15 @@ const Hero = () => {
     const imageReveal = useRevealOnScroll({ delay: 300 });
 
     return (
-        <div className="-mt-15 px-4 md:px-8 lg:px-20 xl:px-60 min-h-screen flex items-center" data-section="about">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0 relative w-full">
+        <div className="-mt-15 px-4 md:px-8 lg:px-20 xl:px-60 min-h-screen flex items-center relative overflow-hidden" data-section="about">
+            {/* Floating Blobs */}
+            <div className="floating-blob floating-blob-1"></div>
+            <div className="floating-blob floating-blob-2"></div>
+            <div className="floating-blob floating-blob-3"></div>
+            <div className="floating-blob floating-blob-4"></div>
+            <div className="floating-blob floating-blob-5"></div>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0 relative w-full z-10">
                 <div className="flex-1 text-center lg:text-left max-w-none lg:max-w-3xl relative z-10">
                     {/* Hello, I'm Simon Brian. Frontend Developer Based In Philippines. */}
                     <div 
