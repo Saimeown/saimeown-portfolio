@@ -12,8 +12,8 @@ const Footer = () => {
         </div>
         
         {/* copyright */}
-        <div className="text-white font-sora text-sm sm:text-base md:text-lg">
-          © 2020-2025
+        <div className="text-white font-sora font-extrabold text-sm sm:text-base md:text-lg">
+          2020-2025
         </div>
       </div>
     </section>
