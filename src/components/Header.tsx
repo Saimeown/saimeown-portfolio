@@ -97,7 +97,7 @@ const Header = () => {
         {/* branding */}
         <div className="flex flex-row items-center space-x-3 md:space-x-6 group cursor-pointer">
           <img src={Logo} alt="Logo" className="h-10 sm:h-12 md:h-16 lg:h-20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" />
-          <p className="text-black font-semibold text-base sm:text-lg md:text-xl lg:text-3xl font-bagel-fat-one transition-all duration-300 group-hover:text-black-700 group-hover:scale-105">Saimeown</p>
+          <p className="text-black font-semibold text-base sm:text-lg md:text-xl lg:text-3xl font-cherry-bomb-one transition-all duration-300 group-hover:text-black-700 group-hover:scale-105">Saimeown</p>
         </div>
         
         {/* nav links */}
@@ -122,9 +122,9 @@ const Header = () => {
         {/* resume button */}
         <button 
           onClick={handleResumeDownload}
-          className="flex flex-row items-center bg-white text-black border-2 border-black px-2 py-1 sm:px-3 sm:py-1 md:px-6 lg:px-9 md:py-2 lg:py-4 rounded-xl transition-all duration-300 hover:bg-black hover:text-white font-bagel-fat-one text-sm sm:text-base md:text-xl lg:text-2xl"
+          className="flex flex-row items-center bg-white text-black border-2 border-black px-2 py-1 sm:px-3 sm:py-1 md:px-6 lg:px-9 md:py-2 lg:py-4 rounded-xl transition-all duration-300 hover:bg-black hover:text-white font-cherry-bomb-one font-bold text-sm sm:text-base md:text-xl lg:text-2xl"
         >
-          <span className="hidden sm:inline">Resume</span>
+          <span className="hidden sm:inline">Download CV</span>
           <span className="sm:hidden">CV</span>
           <FiDownload className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ml-1 sm:ml-2" />
         </button>
