@@ -10,9 +10,8 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Active section detection
       const sections = ['about', 'skills', 'projects', 'contact'];
-      const scrollPosition = currentScrollY + 100; // Offset for better detection
+      const scrollPosition = currentScrollY + 100; 
       
       // Get all section elements
       const sectionElements = sections.map(section => {
@@ -41,13 +40,11 @@ const Header = () => {
 
   const scrollToSection = (sectionId: string) => {
     if (sectionId === 'contact') {
-      // Scroll to the very bottom of the page
       window.scrollTo({
         top: document.documentElement.scrollHeight,
         behavior: 'smooth'
       });
     } else if (sectionId === 'skills') {
-      // Scroll to carousel 1 and center it vertically
       const element = document.getElementById('skills-carousel-1');
       if (element) {
         const elementRect = element.getBoundingClientRect();
@@ -59,7 +56,6 @@ const Header = () => {
         });
       }
     } else if (sectionId === 'projects') {
-      // Scroll to ToothTrackr text and center it vertically
       const element = document.getElementById('projects-toothtrackr');
       if (element) {
         const elementRect = element.getBoundingClientRect();
@@ -73,7 +69,7 @@ const Header = () => {
     } else {
       const element = document.querySelector(`[data-section="${sectionId}"]`);
       if (element) {
-        const offsetTop = (element as HTMLElement).offsetTop - 80; // Account for header height
+        const offsetTop = (element as HTMLElement).offsetTop - 80; 
         window.scrollTo({
           top: offsetTop,
           behavior: 'smooth'
@@ -127,12 +123,6 @@ const Header = () => {
           <span className="hidden sm:inline">Download CV</span>
           <span className="sm:hidden">CV</span>
           <FiDownload className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ml-1 sm:ml-2" />
-        </button>
-        {/* mobile menu button */}
-        <button className="md:hidden flex flex-col space-y-1 p-2 group transition-all duration-300 hover:scale-110" aria-label="Menu">
-          <span className="w-5 h-0.5 bg-black transition-all duration-300 group-hover:translate-x-1"></span>
-          <span className="w-5 h-0.5 bg-black transition-all duration-300"></span>
-          <span className="w-5 h-0.5 bg-black transition-all duration-300 group-hover:-translate-x-1"></span>
         </button>
       </div>
     </div>
