@@ -52,7 +52,7 @@ const Skills = () => {
                         ref={carousel1Reveal.ref}
                         className={`relative overflow-hidden reveal-fade-left ${carousel1Reveal.isRevealed ? 'revealed' : ''}`} 
                     >
-                        <div className="flex gap-3 sm:gap-4 md:gap-6 animate-carousel-right">
+                        <div className="flex gap-2 sm:gap-3 md:gap-4 lg:gap-6 animate-carousel-right">
                             {[...Array(2)].flatMap(() => [
                                 { icon: SiJavascript, name: "JavaScript" },
                                 { icon: SiTypescript, name: "TypeScript" },
@@ -67,9 +67,9 @@ const Skills = () => {
                             ]).map(({ icon: Icon, name }, index) => (
                                 <div
                                     key={`carousel1-${index}`}
-                                    className="flex-shrink-0 w-60 h-60 sm:w-72 sm:h-72 md:w-50 md:h-50 bg-transparent border-2 border-white rounded-lg p-2 sm:p-3 flex flex-col items-center justify-center text-center hover:bg-white hover:text-black transition-all duration-300 cursor-pointer group"
+                                    className="flex-shrink-0 w-32 h-32 xs:w-36 xs:h-36 sm:w-40 sm:h-40 md:w-50 md:h-50 lg:w-60 lg:h-60 bg-transparent border-2 border-white rounded-lg p-2 sm:p-3 flex flex-col items-center justify-center text-center hover:bg-white hover:text-black transition-all duration-300 cursor-pointer group"
                                 >
-                                    <Icon className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-1 sm:mb-2 text-white group-hover:text-black" />
+                                    <Icon className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-1 sm:mb-2 text-white group-hover:text-black" />
                                     <h3 id="skills-carousel-1" className="text-white group-hover:text-black font-sora font-semibold text-xs sm:text-sm">{name}</h3>
                                 </div>
                             ))}
@@ -81,7 +81,7 @@ const Skills = () => {
                         ref={carousel2Reveal.ref}
                         className={`relative overflow-hidden reveal-fade-right ${carousel2Reveal.isRevealed ? 'revealed' : ''}`}
                     >
-                        <div className="flex gap-3 sm:gap-4 md:gap-6 animate-carousel-left">
+                        <div className="flex gap-2 sm:gap-3 md:gap-4 lg:gap-6 animate-carousel-left">
                             {[...Array(2)].flatMap(() => [
                                 { icon: SiNotion, name: "Notion" },
                                 { icon: SiCanva, name: "Canva" },
@@ -96,9 +96,9 @@ const Skills = () => {
                             ]).map(({ icon: Icon, name }, index) => (
                                 <div
                                     key={`carousel2-${index}`}
-                                    className="flex-shrink-0 w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-transparent border-2 border-white rounded-lg p-2 sm:p-3 flex flex-col items-center justify-center text-center hover:bg-white hover:text-black transition-all duration-300 cursor-pointer group"
+                                    className="flex-shrink-0 w-40 h-40 xs:w-44 xs:h-44 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 xl:w-80 xl:h-80 bg-transparent border-2 border-white rounded-lg p-2 sm:p-3 flex flex-col items-center justify-center text-center hover:bg-white hover:text-black transition-all duration-300 cursor-pointer group"
                                 >
-                                    <Icon className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-1 sm:mb-2 text-white group-hover:text-black" />
+                                    <Icon className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-1 sm:mb-2 text-white group-hover:text-black" />
                                     <h3 className="text-white group-hover:text-black font-sora font-semibold text-xs sm:text-sm">{name}</h3>
                                 </div>
                             ))}

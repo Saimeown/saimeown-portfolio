@@ -116,38 +116,68 @@ const SideNav = () => {
   if (!shouldRender) return null;
 
   return (
-    <div className={`fixed right-8 top-1/2 transform -translate-y-1/2 z-40 ${animationClass}`}>
-      <div className="bg-white border-2 border-black rounded-2xl p-3 shadow-lg">
-        <div className="flex flex-col space-y-3">
-          {navItems.map((item) => {
-            const Icon = item.icon;
-            const isActive = activeSection === item.id;
-            
-            return (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`relative p-3 rounded-xl transition-all duration-300 group ${
-                  isActive 
-                    ? 'bg-black text-white' 
-                    : 'bg-transparent text-black hover:bg-black/10'
-                }`}
-                title={item.label}
-              >
-                <Icon className="w-6 h-6" />
-                
-                {/* Tooltip */}
-                <div className="absolute right-full mr-4 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-                  <div className="bg-black text-white px-3 py-1 rounded-3xl border-2 border-white text-sm font-medium whitespace-nowrap">
-                    {item.label}
+    <>
+      {/* Desktop Side Navigation */}
+      <div className={`fixed right-2 sm:right-4 md:right-6 lg:right-8 top-1/2 transform -translate-y-1/2 z-40 hidden sm:block ${animationClass}`}>
+        <div className="bg-white border-2 border-black rounded-xl sm:rounded-2xl p-2 sm:p-3 shadow-lg">
+          <div className="flex flex-col space-y-2 sm:space-y-3">
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = activeSection === item.id;
+              
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`relative p-2 sm:p-3 rounded-lg sm:rounded-xl transition-all duration-300 group ${
+                    isActive 
+                      ? 'bg-black text-white' 
+                      : 'bg-transparent text-black hover:bg-black/10'
+                  }`}
+                  title={item.label}
+                >
+                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                  
+                  {/* Tooltip */}
+                  <div className="absolute right-full mr-4 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                    <div className="bg-black text-white px-3 py-1 rounded-3xl border-2 border-white text-sm font-medium whitespace-nowrap">
+                      {item.label}
+                    </div>
                   </div>
-                </div>
-              </button>
-            );
-          })}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Mobile Bottom Tab Bar */}
+      <div className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 z-40 sm:hidden w-auto ${animationClass}`}>
+        <div className="bg-white border-2 border-black rounded-2xl p-2 shadow-lg mx-auto">
+          <div className="flex space-x-2 justify-center">
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = activeSection === item.id;
+              
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-300 min-w-[60px] ${
+                    isActive 
+                      ? 'bg-black text-white' 
+                      : 'bg-transparent text-black hover:bg-black/10'
+                  }`}
+                >
+                  <Icon className="w-5 h-5 mb-1" />
+                  <span className="text-xs font-medium font-sora">{item.label}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
